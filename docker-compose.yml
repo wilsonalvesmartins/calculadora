@@ -3,8 +3,6 @@ version: '3.8'
 services:
   calculadora-app:
     build: .
-    ports:
-      - "3000:3000"
     volumes:
       - calc_data:/app/data
     restart: unless-stopped
